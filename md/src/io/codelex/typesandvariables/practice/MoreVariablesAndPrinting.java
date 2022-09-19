@@ -1,4 +1,4 @@
-package io.codelex.practice;
+package io.codelex.typesandvariables.practice;
 
 public class MoreVariablesAndPrinting {
     public static void main(String[] args) {
@@ -11,8 +11,8 @@ public class MoreVariablesAndPrinting {
         String teeth = "White";
         String hair = "Brown";
 
-        double inchesToM = (double)Math.round(height*2.54)/100;
-        double lbsToKg = (double)Math.round(weight * 0.453592*100)/100;
+        double inchesToM = (double) Math.round(height * 2.54) / 100;
+        double lbsToKg = (double) Math.round(weight * 0.453592 * 100) / 100;
 
         System.out.println("Let's talk about " + name + ".");
         System.out.println("He's " + inchesToM + " m tall.");

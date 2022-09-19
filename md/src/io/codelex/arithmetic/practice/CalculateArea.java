@@ -60,10 +60,13 @@ public class CalculateArea {
         // Get input from user
         Scanner keyboard = new Scanner(System.in);
         System.out.print("What is the circle's radius? ");
-        //todo
         radius = keyboard.nextBigDecimal();
-
-        // Display output
+        if (radius.compareTo(BigDecimal.ZERO) <= 0) {
+            while (radius.compareTo(BigDecimal.ZERO) <= 0) {
+                System.out.print("Please enter a positive number: ");
+                radius = keyboard.nextBigDecimal();
+            }
+        }
         System.out.println("The circle's area is "
                 + Geometry.areaOfCircle(radius));
     }
@@ -79,15 +82,25 @@ public class CalculateArea {
         System.out.print("Enter length? ");
         //todo
         length = keyboard.nextBigDecimal();
+        if (length.compareTo(BigDecimal.ZERO) <= 0) {
+            while (length.compareTo(BigDecimal.ZERO) <= 0) {
+                System.out.print("Please enter a positive number: ");
+                length = keyboard.nextBigDecimal();
+            }
+        }
 
         // Get width
         System.out.print("Enter width? ");
-        //todo
         width = keyboard.nextBigDecimal();
-
-        // Display output
+        if (width.compareTo(BigDecimal.ZERO) <= 0) {
+            while (width.compareTo(BigDecimal.ZERO) <= 0) {
+                System.out.print("Please enter a positive number: ");
+                width = keyboard.nextBigDecimal();
+            }
+        }
         System.out.println("The rectangle's area is "
                 + Geometry.areaOfRectangle(length, width));
+
     }
 
     public static void calculateTriangleArea() {
@@ -99,15 +112,23 @@ public class CalculateArea {
 
         // Get the base
         System.out.print("Enter length of the triangle's base? ");
-        //todo
         base = keyboard.nextBigDecimal();
+        if (base.compareTo(BigDecimal.ZERO) <= 0) {
+            while (base.compareTo(BigDecimal.ZERO) <= 0) {
+                System.out.print("Please enter a positive number: ");
+                base = keyboard.nextBigDecimal();
+            }
+        }
 
         // Get the height
         System.out.print("Enter triangle's height? ");
-        //todo
         height = keyboard.nextBigDecimal();
-
-        // Display the triangle's area.
+        if (height.compareTo(BigDecimal.ZERO) <= 0) {
+            while (height.compareTo(BigDecimal.ZERO) <= 0) {
+                System.out.print("Please enter a positive number: ");
+                height = keyboard.nextBigDecimal();
+            }
+        }
         System.out.println("The triangle's area is "
                 + Geometry.areaOfTriangle(base, height));
     }

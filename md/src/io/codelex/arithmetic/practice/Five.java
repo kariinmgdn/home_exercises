@@ -1,4 +1,4 @@
-package io.codelex.arithmetic;
+package io.codelex.arithmetic.practice;
 
 import java.util.Scanner;
 
