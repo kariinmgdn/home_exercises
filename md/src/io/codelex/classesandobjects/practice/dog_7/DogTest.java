@@ -11,12 +11,8 @@ public class DogTest {
         Dog dog7 = new Dog("Molly", "female", null, null);
         Dog dog8 = new Dog("Coco", "female", "Buster", "Molly");
         System.out.println(dog1.dogs());
-        System.out.println(dog2.dogs());
-        System.out.println(dog3.dogs());
-        System.out.println(dog4.dogs());
-        System.out.println(dog5.dogs());
-        System.out.println(dog6.dogs());
-        System.out.println(dog7.dogs());
-        System.out.println(dog8.dogs());
+        System.out.println(dog3.fathersName());
+        System.out.println(dog1.hasSameMotherAs(dog4));
+        System.out.println(dog1.hasSameMotherAs(dog2));
     }
 }

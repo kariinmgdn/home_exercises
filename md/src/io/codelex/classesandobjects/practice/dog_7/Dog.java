@@ -24,8 +24,10 @@ public class Dog {
         return this.father;
     }
 
-    public boolean hasSameMotherAs(String name1, String name2) {
-
-        return true;
+    public boolean hasSameMotherAs(Dog otherDog) {
+        if (mother.equals(otherDog.mother)) {
+            return true;
+        }
+        return false;
     }
 }

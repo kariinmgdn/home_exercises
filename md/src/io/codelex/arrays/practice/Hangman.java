@@ -6,31 +6,43 @@ import java.util.Scanner;
 public class Hangman {
     public static void main(String[] args) {
         Random random = new Random();
-        int r = random.nextInt(3 - 0 + 1);
+        int r = random.nextInt(3 + 1);
         Scanner sc = new Scanner(System.in);
 
         String[] svtMembers = {"woozi", "mingyu", "vernon", "dk"};
 
         int count = 0;
+        int correctLetters = 0;
+        String incorrectLetters = "";
 
         String[] member = svtMembers[r].split("");
-        String[] word = "_".repeat(member.length).split("");
-        String res = "";
-        for (int j = 0; j < word.length; j++) {
-            res += word[j];
+        String[] unknownWord = "_".repeat(member.length).split("");
+        String fullName = "";
+        for (int j = 0; j < unknownWord.length; j++) {
+            fullName += unknownWord[j];
         }
-        System.out.println(res);
+
+        System.out.println(fullName);
+
         while (count <= member.length + 2) {
-            res = "";
-            String letter = sc.nextLine();
+            fullName = "";
+            String input = sc.nextLine();
             for (int i = 0; i < member.length; i++) {
-                if (member[i].equals(letter)) {
-                    word[i] = letter;
+                if (member[i].equals(input)) {
+                    unknownWord[i] = input;
+                    correctLetters++;
                 }
-                res += word[i];
+                fullName += unknownWord[i];
+            }
+
+            if(correctLetters == member.length) {
+                System.out.println(fullName);
+                System.out.println("You guessed it!");
+                break;
             }
             count++;
-            System.out.println(res);
+            System.out.println(fullName);
+
         }
 
 
