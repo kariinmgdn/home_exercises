@@ -2,8 +2,8 @@ package io.codelex.classesandobjects.practice.savingaccount;
 
 public class SavingsAccount {
 
-    private double rate;
-    private double balance;
+    private final double rate;
+    private final double balance;
 
     public SavingsAccount(double rate, double balance) {
         this.rate = rate;
@@ -11,11 +11,11 @@ public class SavingsAccount {
     }
 
     public double monthlyInterestRate() {
-        return rate / 12d * this.balance;
+        return Math.round(rate / 12d * this.balance *100d)/100d ;
     }
 
     public double deposit(double d) {
-        return d + this.balance;
+        return Math.round((d+ this.balance)*100d)/100d ;
     }
 
     public double withdrawal(double w) {

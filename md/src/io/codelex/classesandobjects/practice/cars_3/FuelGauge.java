@@ -2,31 +2,25 @@ package io.codelex.classesandobjects.practice.cars_3;
 
 public class FuelGauge {
 
+    public final int MAX_FUEL = 70;
     private int currentAmountOfFuel;
 
-    public FuelGauge(int currentAmountOfFuel) {
-        this.currentAmountOfFuel = currentAmountOfFuel;
-    }
-
-    public int incrementFuel() {
-        if (currentAmountOfFuel < 70) {
+    public void incrementFuel() {
+        if (currentAmountOfFuel < MAX_FUEL) {
             currentAmountOfFuel++;
+            System.out.println(getCurrentAmountOfFuel());
         } else {
-            currentAmountOfFuel = 70;
+            System.out.println("The tank is already full!");
         }
-        return currentAmountOfFuel;
     }
 
-    public int setCurrentAmountOfFuel(int currentAmountOfFuel) {
-        this.currentAmountOfFuel = currentAmountOfFuel;
-        return currentAmountOfFuel;
-    }
 
-    public int decrementFuel() {
-        while (currentAmountOfFuel > 0) {
+    public void decrementFuel() {
+        if (currentAmountOfFuel > 0) {
             currentAmountOfFuel--;
+        } else {
+            System.out.println("The tank is empty!");
         }
-        return currentAmountOfFuel;
     }
 
     public int getCurrentAmountOfFuel() {

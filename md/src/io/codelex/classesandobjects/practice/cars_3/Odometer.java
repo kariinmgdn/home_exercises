@@ -4,25 +4,18 @@ public class Odometer {
 
     private int mileage;
 
-    public Odometer(int mileage) {
-        this.mileage = mileage;
-    }
-
-    public int getMileage() {
-        return mileage;
-    }
-
-    public void incrementMileage() {
-        FuelGauge fuel = new FuelGauge(5);
-        for (int i = 0; i < 10; i++) {
-            if (i == 9) {
-                fuel.setCurrentAmountOfFuel(fuel.decrementFuel());
-            }
-        }
-        if (fuel.getCurrentAmountOfFuel() > 0 && mileage < 999999) {
+    public void incrementMileage(FuelGauge gauge) {
+        if (mileage < 999999) {
             mileage++;
+            System.out.println("Current amount of mileage " + mileage + " and current amount of fuel is " + gauge.getCurrentAmountOfFuel() + " l");
         } else {
-            mileage = 999999;
+            mileage = 0;
+        }
+    }
+
+    public void fuelDecreasment(FuelGauge gauge) {
+        if (mileage%10 == 0) {
+            gauge.decrementFuel();
         }
     }
 }

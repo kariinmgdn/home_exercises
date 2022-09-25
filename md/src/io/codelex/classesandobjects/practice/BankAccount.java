@@ -4,15 +4,31 @@ package io.codelex.classesandobjects.practice;
 // information including name and balance of money.
 
 public class BankAccount {
-    public String name;
-    public double balance;
+    private String name;
+    private double balance;
+    public BankAccount(String name, double balance) {
+        this.name = name;
+        this.balance = balance;
+    }
+
 
     public final void deposit(double amount) {
-        //todo
+        balance += amount;
     }
 
     public final void withdraw(double amount) {
-        //todo
+        balance-=amount;
+    }
+
+    public String toString() {
+        String s = "";
+        String minus = "";
+        if (balance < 0) {
+            balance *= -1;
+            minus = "-";
+        }
+        s = name + ", " + minus + "$" + String.format("%.2f", balance);
+        return s;
     }
 
 }
