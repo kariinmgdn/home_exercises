@@ -7,19 +7,19 @@ public class FizzBuzz {
         Scanner sc = new Scanner(System.in);
         System.out.println("Max value?");
         int maxValue = sc.nextInt();
-        for(int i = 0; i < maxValue; i++) {
-            if (i % 20 == 0) {
-                System.out.print("\n");
-            }
-            String x = Integer.toString(i + 1);
-            if ((i + 1) % 3 == 0 && (i + 1) % 5 == 0) {
+        for (int i = 1; i <= maxValue; i++) {
+            String x = Integer.toString(i);
+            if (i % 3 == 0 && i % 5 == 0) {
                 x = "FizzBuzz";
-            }else if ((i + 1) % 3 == 0) {
+            } else if (i % 3 == 0) {
                 x = "Fizz";
-            }else if ((i + 1) % 5 == 0) {
+            } else if (i % 5 == 0) {
                 x = "Buzz";
             }
             System.out.print(x + " ");
+            if (i % 20 == 0) {
+                System.out.print("\n");
+            }
         }
     }
 }

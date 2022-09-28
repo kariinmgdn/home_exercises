@@ -12,7 +12,7 @@ public class Piglet {
 
          while (true){
              Random r = new Random();
-             int random = r.nextInt(10 - 1 + 1) + 1;
+             int random = r.nextInt(10) + 1;
              System.out.println("You rolled a " + random);
              if (random == 1) {
                  System.out.println("You got 0 points.");
@@ -20,7 +20,7 @@ public class Piglet {
              }
             points += random;
             System.out.print("Roll again? ");
-            String yesNo = sc.nextLine();
+            String yesNo = sc.nextLine().toLowerCase();
             if (yesNo.equals("no")) {
                 System.out.println("You got " + points + " points!");
                 break;

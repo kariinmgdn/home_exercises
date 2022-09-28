@@ -2,12 +2,12 @@ package io.codelex.loops.practice;
 
 public class AsciiFigure {
 
-    public static final int N = 7;
+    private static final int FIGURE_SIZE = 7;
 
     public static void main(String[] args) {
-        int lines = (N-1)*4;
+        int lines = (FIGURE_SIZE -1)*4;
 
-        for (int i = 0; i < N; i++) {
+        for (int i = 0; i < FIGURE_SIZE; i++) {
             String line = "";
             for (int j = 0; j < lines - i*4; j++) {
                 line += "/";
