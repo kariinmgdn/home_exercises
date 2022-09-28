@@ -13,9 +13,8 @@ public class RollTwoDice {
             input = sc.nextInt();
         }
         while (true) {
-            Random r = new Random();
-            int random1 = r.nextInt(6 - 1 + 1) + 1;
-            int random2 = r.nextInt(6 - 1 + 1) + 1;
+            int random1 = rollDice();
+            int random2 = rollDice();
             int sum = random1 + random2;
             System.out.println(random1 + " and " + random2 + " = " + sum);
             if (sum == input) {
@@ -23,5 +22,9 @@ public class RollTwoDice {
 
             }
         }
+    }
+    private static int rollDice() {
+        Random r = new Random();
+        return r.nextInt(6) + 1;
     }
 }
