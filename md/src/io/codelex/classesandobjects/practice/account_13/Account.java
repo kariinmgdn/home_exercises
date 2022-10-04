@@ -2,7 +2,7 @@ package io.codelex.classesandobjects.practice.account_13;
 
 public class Account {
     private double balance;
-    private String owner;
+    private final String owner;
 
     public Account(String owner, double balance) {
         this.balance = balance;
@@ -20,9 +20,10 @@ public class Account {
     public double balance() {
         return balance;
     }
+
     public static void transfer(Account from, Account to, double howMuch) {
-        from.balance-=howMuch;
-        to.balance+=howMuch;
+        from.balance -= howMuch;
+        to.balance += howMuch;
     }
 
     @Override

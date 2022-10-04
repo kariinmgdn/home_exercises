@@ -1,10 +1,7 @@
 package io.codelex.classesandobjects.practice;
 
-// Each BankAccount object represents one user's account
-// information including name and balance of money.
-
 public class BankAccount {
-    private String name;
+    private final String name;
     private double balance;
     public BankAccount(String name, double balance) {
         this.name = name;

@@ -67,7 +67,7 @@ public class TicTacToe {
         return false;
     }
 
-    public static char moveO(int x, int y) {
+    public static void moveO(int x, int y) {
         while (board[x][y] != ' ') {
             System.out.print("Try again: ");
             Scanner keyboard = new Scanner(System.in);
@@ -75,10 +75,9 @@ public class TicTacToe {
             y = keyboard.nextInt();
         }
         board[x][y] = 'O';
-        return board[x][y];
     }
 
-    public static char moveX(int x, int y) {
+    public static void moveX(int x, int y) {
         while (board[x][y] != ' ') {
             Scanner keyboard = new Scanner(System.in);
             System.out.print("Try again: ");
@@ -86,7 +85,6 @@ public class TicTacToe {
             y = keyboard.nextInt();
         }
         board[x][y] = 'X';
-        return board[x][y];
     }
 
     public static void initBoard() {

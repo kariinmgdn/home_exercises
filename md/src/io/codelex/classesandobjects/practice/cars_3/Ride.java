@@ -9,10 +9,9 @@ public class Ride {
             gauge.incrementFuel();
         }
 
-        while (gauge.getCurrentAmountOfFuel() > 0) { {
+        while (gauge.getCurrentAmountOfFuel() > 0) {
             miles.incrementMileage(gauge);
             miles.fuelDecreasment(gauge);
-        }
         }
 
     }

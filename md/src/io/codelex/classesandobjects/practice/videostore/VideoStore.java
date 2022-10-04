@@ -30,11 +30,11 @@ public class VideoStore {
 
     public void inventory() {
         System.out.println("All movies: ");
-        for(int i = 0; i < allVideos.size(); i++) {
-            if (allVideos.get(i).isCheckedOut()) {
-                System.out.println("Name: " + allVideos.get(i).getName() + "(rating: "+allVideos.get(i).getRating()+"/5) - currently unavailable");
+        for (Video allVideo : allVideos) {
+            if (allVideo.isCheckedOut()) {
+                System.out.println("Name: " + allVideo.getName() + "(rating: " + allVideo.getRating() + "/5) - currently unavailable");
             } else {
-                System.out.println("Name: " + allVideos.get(i).getName() + "(rating: "+allVideos.get(i).getRating()+"/5), " + allVideos.get(i).getPercentage() + "% of users liked this movie!");
+                System.out.println("Name: " + allVideo.getName() + "(rating: " + allVideo.getRating() + "/5), " + allVideo.getPercentage() + "% of users liked this movie!");
 
             }
         }

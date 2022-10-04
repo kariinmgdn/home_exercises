@@ -11,11 +11,11 @@ public class SavingsAccount {
     }
 
     public double monthlyInterestRate() {
-        return Math.round(rate / 12d * this.balance *100d)/100d ;
+        return Math.round(rate / 12d * this.balance * 100d) / 100d;
     }
 
     public double deposit(double d) {
-        return Math.round((d+ this.balance)*100d)/100d ;
+        return Math.round((d + this.balance) * 100d) / 100d;
     }
 
     public double withdrawal(double w) {

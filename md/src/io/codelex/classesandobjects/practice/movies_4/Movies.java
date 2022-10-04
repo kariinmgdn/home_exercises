@@ -14,7 +14,7 @@ public class Movies {
         System.out.println(onlyPG);
     }
 
-    public static List<Movie> getPG(List<Movie> movieList) {
+    private static List<Movie> getPG(List<Movie> movieList) {
         List<Movie> PGMovies = new ArrayList<>();
         for (Movie PGMovie : movieList) {
             if (PGMovie.isPG()) {

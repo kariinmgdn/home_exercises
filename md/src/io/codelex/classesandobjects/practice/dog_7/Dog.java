@@ -1,10 +1,10 @@
 package io.codelex.classesandobjects.practice.dog_7;
 
 public class Dog {
-    private String name;
-    private String sex;
+    private final String name;
+    private final String sex;
     private String father;
-    private String mother;
+    private final String mother;
 
     public Dog(String name, String sex, String father, String mother) {
         this.name = name;
@@ -25,9 +25,6 @@ public class Dog {
     }
 
     public boolean hasSameMotherAs(Dog otherDog) {
-        if (mother.equals(otherDog.mother)) {
-            return true;
-        }
-        return false;
+        return mother.equals(otherDog.mother);
     }
 }

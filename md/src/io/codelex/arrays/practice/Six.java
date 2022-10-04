@@ -11,7 +11,6 @@ public class Six {
             array1[k] = random.nextInt(100 - 1 + 1) + 1;
         }
 
-        int[] array2 = array1;
         System.out.print("Array 1: ");
         for (int i = 0; i < array1.length; i++) {
             if (i == 9) {
@@ -22,8 +21,8 @@ public class Six {
         }
 
         System.out.print("\nArray 2: ");
-        for (int j = 0; j < array2.length; j++) {
-            System.out.print(array2[j] + " ");
+        for (int i : array1) {
+            System.out.print(i + " ");
         }
     }
 }

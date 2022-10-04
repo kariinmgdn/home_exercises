@@ -17,10 +17,7 @@ public class Movie {
     }
 
     public boolean isPG() {
-        if (rating.equals("PG")) {
-            return true;
-        }
-        return false;
+        return rating.equals("PG");
     }
 
     public String toString() {
