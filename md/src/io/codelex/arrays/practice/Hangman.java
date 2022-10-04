@@ -4,47 +4,66 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Hangman {
+    private static final Scanner SC = new Scanner(System.in);
+
     public static void main(String[] args) {
+        game();
+    }
+
+    private static void game() {
         Random random = new Random();
-        int r = random.nextInt(3 + 1);
-        Scanner sc = new Scanner(System.in);
+        int r = random.nextInt(12 + 1);
+        String[] svtMembers = {"woozi", "mingyu", "vernon", "dk", "scoups", "jeonghan", "joshua", "jun",
+                                "hoshi", "wonwoo", "the8", "seungkwan", "dino"};
 
-        String[] svtMembers = {"woozi", "mingyu", "vernon", "dk"};
-
+        StringBuilder incorrectLetters = new StringBuilder();
+        String[] memberArr = svtMembers[r].split("");
+        String word = "_".repeat(memberArr.length);
+        String[] unknownWord = word.split("");
+        System.out.println(word);
         int count = 0;
-        int correctLetters = 0;
-        String incorrectLetters = "";
 
-        String[] member = svtMembers[r].split("");
-        String[] unknownWord = "_".repeat(member.length).split("");
-        String fullName = "";
-        for (int j = 0; j < unknownWord.length; j++) {
-            fullName += unknownWord[j];
-        }
 
-        System.out.println(fullName);
-
-        while (count <= member.length + 2) {
-            fullName = "";
-            String input = sc.nextLine();
-            for (int i = 0; i < member.length; i++) {
-                if (member[i].equals(input)) {
+        while (count < 5) {
+            boolean guessedAtLeastOne = false;
+            String input = SC.nextLine().toLowerCase();
+            StringBuilder fullName = new StringBuilder();
+            for (int i = 0; i < memberArr.length; i++) {
+                if (input.equals(memberArr[i])) {
                     unknownWord[i] = input;
-                    correctLetters++;
+                    fullName.append(input);
+                    guessedAtLeastOne = true;
+                } else if (!unknownWord[i].contains("_")) {
+                    fullName.append(unknownWord[i]);
+                } else {
+                    fullName.append("_");
                 }
-                fullName += unknownWord[i];
             }
-
-            if(correctLetters == member.length) {
-                System.out.println(fullName);
-                System.out.println("You guessed it!");
-                break;
+            if (!guessedAtLeastOne) {
+                count++;
+                incorrectLetters.append(input);
             }
-            count++;
+            System.out.println(incorrectLetters);
             System.out.println(fullName);
 
+            if (fullName.toString().equals(svtMembers[r])) {
+                System.out.println("You guessed it!");
+                playAgain();
+            } else if (count == 5) {
+                System.out.println("You lost!");
+                playAgain();
+            }
         }
+    }
 
-
+    private static void playAgain() {
+        System.out.println("Play again? Y/N");
+        String yesNo = SC.nextLine().toUpperCase();
+        if (yesNo.equals("Y")) {
+            game();
+        } else {
+            System.out.println("Bye!");
+            System.exit(0);
+        }
     }
 }

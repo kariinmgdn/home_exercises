@@ -24,6 +24,7 @@ public class Video {
     public double getRating() {
         return rating;
     }
+
     public int getPercentage() {
         return percentage;
     }
@@ -33,7 +34,6 @@ public class Video {
     }
 
     public void checkedOut() {
-
         isCheckedOut = true;
     }
 
@@ -42,15 +42,14 @@ public class Video {
     }
 
     public void receiveARating(int input) {
-        int ratings = lastRatings+1;
-        rating = ((rating*lastRatings)+input)/ratings;
+        int ratings = lastRatings + 1;
+        rating = ((rating * lastRatings) + input) / ratings;
         lastRatings = ratings;
         if (input == 5) {
             i++;
         }
-        percentage = 100/lastRatings*i;
+        percentage = 100 / lastRatings * i;
     }
-
 
 
 }

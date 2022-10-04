@@ -30,4 +30,10 @@ hs_err_pid*
 *.iml
 =======
 */out
+<<<<<<< HEAD
 >>>>>>> 4a2fa53 (Nepabeigts m.d.)
+=======
+
+/.idea/
+*.iml
+>>>>>>> 446925a (3. homework)

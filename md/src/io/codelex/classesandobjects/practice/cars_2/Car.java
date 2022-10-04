@@ -2,32 +2,31 @@ package io.codelex.classesandobjects.practice.cars_2;
 
 public class Car {
 
-    private double startKilometers;
-    private double endKilometers;
-    private double liters;
+    private final double startKilometers;
+    private double liters = 0;
 
-
-    public Car(double startKilometers, double endKilometers, double liters) {
+    public Car(double startKilometers) {
         this.startKilometers = startKilometers;
-        this.endKilometers = endKilometers;
-        this.liters = liters;
     }
 
     public double calculateConsumption() {
-        return (endKilometers - startKilometers) / liters;
+        return getStartKilometers() / liters;
     }
 
     public boolean gasHog() {
-        if (calculateConsumption() > 15) {
-            return true;
-        }
-        return false;
+        return calculateConsumption() < 15;
     }
 
     public boolean economyCar() {
-        if (calculateConsumption() < 15) {
-            return true;
-        }
-        return false;
+        return calculateConsumption() > 15;
+    }
+
+    public double fillUp(double km, double liters) {
+        this.liters += liters;
+        return km - getStartKilometers();
+    }
+
+    public double getStartKilometers() {
+        return startKilometers;
     }
 }

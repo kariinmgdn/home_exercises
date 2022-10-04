@@ -28,10 +28,9 @@ public class Exercise1 {
             System.out.print(num1 + " ");
         }
         System.out.println("\n");
-        int[] myArray11 = myArray1;
-        Arrays.sort(myArray11);
+        Arrays.sort(myArray1);
         System.out.println("Sorted numeric array : ");
-        for (int num2 : myArray11) {
+        for (int num2 : myArray1) {
             System.out.print(num2 + " ");
         }
         System.out.println("\n");
@@ -42,10 +41,9 @@ public class Exercise1 {
             System.out.print(word1 + " ");
         }
         System.out.println("\n");
-        String[] myArray22 = myArray2;
-        Arrays.sort(myArray22);
+        Arrays.sort(myArray2);
         System.out.println("Sorted string array : ");
-        for (String word2 : myArray22) {
+        for (String word2 : myArray2) {
             System.out.print(word2 + " ");
         }
 

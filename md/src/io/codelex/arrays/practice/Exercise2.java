@@ -16,7 +16,7 @@ public class Exercise2 {
         int maxNumber = input.nextInt();
 
         int sum = 0;
-        int myArray[] = new int[maxNumber - minNumber + 1];
+        int[] myArray = new int[maxNumber - minNumber + 1];
         for (int i = 0; i < myArray.length; i++) {
             myArray[i] = minNumber;
             sum += minNumber;
