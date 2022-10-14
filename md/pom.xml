@@ -27,6 +27,7 @@
             <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
+<<<<<<< HEAD
 
         <dependency>
             <groupId>org.hamcrest</groupId>
@@ -34,6 +35,8 @@
             <version>2.2</version>
             <scope>test</scope>
         </dependency>
+=======
+>>>>>>> 663f904 (test)
     </dependencies>
 
 
