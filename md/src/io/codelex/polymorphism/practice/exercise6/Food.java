@@ -18,7 +18,4 @@ public abstract class Food {
         return quantity;
     }
 
-    @Override
-    public String toString(){ return getType() + " " + getQuantity();
-    }
 }

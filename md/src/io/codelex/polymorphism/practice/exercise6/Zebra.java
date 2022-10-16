@@ -1,8 +1,9 @@
 package io.codelex.polymorphism.practice.exercise6;
 
 public class Zebra extends Mammal{
-    protected Zebra(String animalName, String animalType, Double animalWeight, Integer foodEaten, String livingRegion) {
-        super(animalName, animalType, animalWeight, foodEaten, livingRegion);
+
+    protected Zebra(String animalName, String animalType, Double animalWeight, String livingRegion) {
+        super(animalName, animalType, animalWeight, livingRegion);
     }
 
     @Override
@@ -13,7 +14,12 @@ public class Zebra extends Mammal{
     }
 
     @Override
-    public void eatFood() {
-        super.eatFood();
+    public void eatFood(Food food) {
+        super.eatFood(food);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

@@ -1,9 +1,10 @@
 package io.codelex.polymorphism.practice.exercise6;
 
 public class Mouse  extends Mammal{
-    protected Mouse(String animalName, String animalType, Double animalWeight,
-                    Integer foodEaten, String livingRegion) {
-        super(animalName, animalType, animalWeight, foodEaten, livingRegion);
+
+
+    protected Mouse(String animalName, String animalType, Double animalWeight, String livingRegion) {
+        super(animalName, animalType, animalWeight, livingRegion);
     }
 
     @Override
@@ -12,7 +13,12 @@ public class Mouse  extends Mammal{
     }
 
     @Override
-    public void eatFood() {
-        super.eatFood();
+    public void eatFood(Food food) {
+        super.eatFood(food);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

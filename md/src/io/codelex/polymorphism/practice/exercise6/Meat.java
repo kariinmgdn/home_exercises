@@ -16,9 +16,4 @@ public class Meat extends Food{
     public int getQuantity() {
         return super.getQuantity();
     }
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 }

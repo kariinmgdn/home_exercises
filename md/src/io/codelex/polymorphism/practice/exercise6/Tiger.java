@@ -1,8 +1,10 @@
 package io.codelex.polymorphism.practice.exercise6;
 
 public class Tiger extends Felime{
-    protected Tiger(String animalName, String animalType, Double animalWeight, Integer foodEaten, String livingRegion) {
-        super(animalName, animalType, animalWeight, foodEaten, livingRegion);
+
+
+    protected Tiger(String animalName, String animalType, Double animalWeight, String livingRegion) {
+        super(animalName, animalType, animalWeight, livingRegion);
     }
 
     @Override
@@ -11,7 +13,16 @@ public class Tiger extends Felime{
     }
 
     @Override
-    public void eatFood() {
-        super.eatFood();
+    public void eatFood(Food food) {
+        if (food instanceof Meat) {
+            super.eatFood(food);
+        } else {
+            System.out.println(getAnimalType() + " is not eating that type of food!");
+        }
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
