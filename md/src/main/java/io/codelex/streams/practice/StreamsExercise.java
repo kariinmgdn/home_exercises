@@ -1,6 +1,7 @@
 package io.codelex.streams.practice;
 
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -21,11 +22,7 @@ public class StreamsExercise {
     }
 
     public static List<User> getLimitedUserList(List<User> users, int limit) {
-        List<User> userList = new ArrayList<>();
-        for (int i = 0; i < limit; i++) {
-            userList.add(users.get(i));
-        }
-        return userList;
+        return users.stream().limit(limit).toList();
     }
 
     public static Integer countUsersOlderThen25(List<User> users) {
@@ -41,13 +38,7 @@ public class StreamsExercise {
     }
 
     public static List<Integer> skip(List<Integer> integers, Integer toSkip) {
-        List<Integer> integerList = new ArrayList<>();
-        for (Integer integer: integers) {
-            if (integer > toSkip) {
-                integerList.add(integer);
-            }
-        }
-        return integerList;
+        return integers.stream().skip(toSkip).toList();
     }
 
     public static List<String> getFirstNames(List<String> names) {
@@ -80,49 +71,19 @@ public class StreamsExercise {
     }
 
     public static Map<Boolean, List<User>> partionUsersByGender(List<User> users) {
-        Map<Boolean, List<User>> listMap = new HashMap<>();
-        for (User user : users) {
-            List<User> userList = new ArrayList<>();
-            if (!listMap.containsKey(user.isMale())) {
-                userList.add(user);
-                listMap.put(user.isMale(), userList);
-            } else {
-                listMap.get(user.isMale()).add(user);
-            }
-        }
-        return listMap;
+        return users.stream().collect(Collectors.partitioningBy(User::isMale));
     }
 
     public static Map<Integer, List<User>> groupByAge(List<User> users) {
-        Map<Integer, List<User>> listMap = new HashMap<>();
-        for (User user : users) {
-            List<User> userList = new ArrayList<>();
-            userList.add(user);
-            listMap.put(user.getAge(), userList);
-        }
-        return listMap;
+        return users.stream().collect(Collectors.groupingBy(User::getAge));
     }
 
     public static Map<Boolean, Map<Integer, List<User>>> groupByGenderAndAge(List<User> users) {
-        Map<Boolean, Map<Integer, List<User>>> listMap = new HashMap<>();
-        Map<Integer, List<User>> ageList = new HashMap<>();
-
-        for (User user : users) {
-            List<User> userList = new ArrayList<>();
-            userList.add(user);
-            ageList.put(user.getAge(), userList);
-            listMap.put(user.isMale(), ageList);
-        }
-        return listMap;
+        return users.stream().collect(Collectors.groupingBy(User::isMale, Collectors.groupingBy(User::getAge)));
     }
 
     public static Map<Boolean, Long> countGender(List<User> users) {
-        Map<Boolean, Long> listMap = new HashMap<>();
-        for(User user:users) {
-            long l = listMap.get(user.isMale()) == null ? 0 : listMap.get(user.isMale());
-            listMap.put(user.isMale(), l+1);
-        }
-        return listMap;
+        return users.stream().collect(Collectors.groupingBy(User::isMale, Collectors.counting()));
     }
 
     public static boolean anyMatch(List<User> users, int age) {
@@ -134,13 +95,7 @@ public class StreamsExercise {
     }
 
     public static Optional<User> findAny(List<User> users, String name) {
-        Optional<User> user = users.stream().findAny();
-        for (User user1 : users) {
-            if (user1.getName().equals(name)) {
-                return user;
-            }
-        }
-        return Optional.empty();
+        return users.stream().filter(user -> user.getName().equals(name)).findAny();
     }
 
     public static List<User> sortByAge(List<User> users) {
