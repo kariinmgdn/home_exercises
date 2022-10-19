@@ -1,11 +1,9 @@
 package io.codelex.oop.cars;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class CarService{
-    private List<Car> carsInService = new ArrayList<>();
+    private final List<Car> carsInService = new ArrayList<>();
     private int mostExp = 0;
     private Car mostExpCar;
 
@@ -25,17 +23,65 @@ public class CarService{
                 .filter(car -> car.getCarEngine().equals(Engine.V12))
                 .toList();
     }
-    public void sortList(Comparator parameter) {
-        //idk
+    public void sortList(String parameter) {
+        if (parameter.equals("ascending")) {
+            carsInService.sort(Comparator.comparing(Car::getCarName));
+        } else {
+            carsInService.sort(Comparator.comparing(Car::getCarName).reversed());
+        }
     }
 
     public List<Car> specificManufacturer(Manufacturer manufacturer) {
         return carsInService.stream()
-                .filter(car -> car.getManufacturerList().equals(manufacturer))
-                .toList(); //kopumaa also idk
+                .filter(car -> car.getManufacturerList().contains(manufacturer))
+                .toList();
     }
 
-    // also 12. punkts UN PIEVIENOT VAIRAKUS Manufacturer
+    public List<Car> getManufacturerWithTheYearOfEstablishment(int year, String comparator) {
+        List<Car> carList = new ArrayList<>();
+
+        for (Car car : carsInService) {
+            int i = 0;
+            for (Manufacturer manufacturer : car.getManufacturerList()) {
+                switch (comparator) {
+                    case ("<") -> {
+                        if (manufacturer.getYearOfEstablishment() < year) {
+                            i++;
+                        }
+                    }
+                    case (">") -> {
+                        if (manufacturer.getYearOfEstablishment() > year) {
+                            i++;
+                        }
+                    }
+                    case ("=") -> {
+                        if (manufacturer.getYearOfEstablishment() == year) {
+                            i++;
+                        }
+                    }
+                    case ("<=") -> {
+                        if (manufacturer.getYearOfEstablishment() <= year) {
+                            i++;
+                        }
+                    }
+                    case (">=") -> {
+                        if (manufacturer.getYearOfEstablishment() >= year) {
+                            i++;
+                        }
+                    }
+                    case ("!=") -> {
+                        if (manufacturer.getYearOfEstablishment() != year) {
+                            i++;
+                        }
+                    }
+                }
+            }
+            if (i>0) {
+                carList.add(car);
+            }
+        }
+        return carList;
+    }
 
     public boolean specificCar(Car car) {
         for (Car car1 : carsInService) {

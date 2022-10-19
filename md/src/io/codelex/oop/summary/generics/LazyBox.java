@@ -1,17 +1,20 @@
 package io.codelex.oop.summary.generics;
 
-import java.util.List;
+import java.util.function.Supplier;
 
-public class LazyBox<O extends Object> {
-    private Object object;
-    private List<Object> box;
+public class LazyBox<T> {
 
-    public Object get() {
-        box.add(getObject());
-        return box;
+    private T item;
+    private final Supplier<T> function;
+
+    public LazyBox(Supplier<T> function) {
+        this.function = function;
     }
 
-    public Object getObject() {
-        return object;
+    public T getItem() {
+        if (item == null) {
+            item = function.get();
+        }
+        return item;
     }
 }
