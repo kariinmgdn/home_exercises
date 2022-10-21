@@ -1,7 +1,7 @@
-package io.codelex.classesandobjects.practice.cars_3;
+package io.codelex.classesandobjects.practice.cars3;
 
 public class FuelGauge {
-    public final int MAX_FUEL = 70;
+    public static final int MAX_FUEL = 70;
     private int currentAmountOfFuel;
 
     public void incrementFuel() {
@@ -21,6 +21,7 @@ public class FuelGauge {
             System.out.println("The tank is empty!");
         }
     }
+
     public int getCurrentAmountOfFuel() {
         return currentAmountOfFuel;
     }

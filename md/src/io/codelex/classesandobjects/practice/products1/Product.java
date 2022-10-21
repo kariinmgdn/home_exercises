@@ -1,8 +1,8 @@
-package io.codelex.classesandobjects.practice.products_1;
+package io.codelex.classesandobjects.practice.products1;
 
 public class Product {
 
-    private String name;
+    private final String name;
     private double priceAtStart;
     private int amountAtStart;
 

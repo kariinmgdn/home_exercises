@@ -8,7 +8,7 @@ public class TestPoints {
         swapPoints(p1, p2);
     }
 
-    public static void swapPoints(Point p1, Point p2) {
+    private static void swapPoints(Point p1, Point p2) {
         Point temp = p1;
         p1 = p2;
         p2 = temp;

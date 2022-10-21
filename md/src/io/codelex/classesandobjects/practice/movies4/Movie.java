@@ -1,4 +1,4 @@
-package io.codelex.classesandobjects.practice.movies_4;
+package io.codelex.classesandobjects.practice.movies4;
 
 public class Movie {
     private final String title;

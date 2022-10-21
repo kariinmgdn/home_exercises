@@ -12,12 +12,12 @@ public class Hangman {
 
     private static void game() {
         Random random = new Random();
-        int r = random.nextInt(12 + 1);
+        int randomInt = random.nextInt(12 + 1);
         String[] svtMembers = {"woozi", "mingyu", "vernon", "dk", "scoups", "jeonghan", "joshua", "jun",
-                                "hoshi", "wonwoo", "the8", "seungkwan", "dino"};
+                "hoshi", "wonwoo", "the8", "seungkwan", "dino"};
 
         StringBuilder incorrectLetters = new StringBuilder();
-        String[] memberArr = svtMembers[r].split("");
+        String[] memberArr = svtMembers[randomInt].split("");
         String word = "_".repeat(memberArr.length);
         String[] unknownWord = word.split("");
         System.out.println(word);
@@ -46,7 +46,7 @@ public class Hangman {
             System.out.println(incorrectLetters);
             System.out.println(fullName);
 
-            if (fullName.toString().equals(svtMembers[r])) {
+            if (fullName.toString().equals(svtMembers[randomInt])) {
                 System.out.println("You guessed it!");
                 playAgain();
             } else if (count == 5) {

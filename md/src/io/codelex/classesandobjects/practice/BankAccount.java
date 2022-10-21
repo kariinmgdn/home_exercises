@@ -3,6 +3,7 @@ package io.codelex.classesandobjects.practice;
 public class BankAccount {
     private final String name;
     private double balance;
+
     public BankAccount(String name, double balance) {
         this.name = name;
         this.balance = balance;
@@ -14,7 +15,7 @@ public class BankAccount {
     }
 
     public final void withdraw(double amount) {
-        balance-=amount;
+        balance -= amount;
     }
 
     public String toString() {

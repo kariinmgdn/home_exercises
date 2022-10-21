@@ -1,4 +1,4 @@
-package io.codelex.classesandobjects.practice.movies_4;
+package io.codelex.classesandobjects.practice.movies4;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,13 +15,13 @@ public class Movies {
     }
 
     private static List<Movie> getPG(List<Movie> movieList) {
-        List<Movie> PGMovies = new ArrayList<>();
+        List<Movie> pgMovies = new ArrayList<>();
         for (Movie PGMovie : movieList) {
             if (PGMovie.isPG()) {
-                PGMovies.add(PGMovie);
+                pgMovies.add(PGMovie);
             }
         }
-        return PGMovies;
+        return pgMovies;
     }
 
 }

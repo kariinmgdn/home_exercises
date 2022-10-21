@@ -1,4 +1,4 @@
-package io.codelex.classesandobjects.practice.date_5;
+package io.codelex.classesandobjects.practice.date5;
 
 public class Date {
     private int day;

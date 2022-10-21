@@ -39,9 +39,10 @@ public class VideoStore {
             }
         }
     }
+
     private int search(String name) {
-        for (Video movie: allVideos) {
-            if(movie.getName().equals(name)) {
+        for (Video movie : allVideos) {
+            if (movie.getName().equals(name)) {
                 return allVideos.indexOf(movie);
             }
         }
