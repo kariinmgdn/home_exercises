@@ -46,16 +46,12 @@ public class StreamsExercise {
     }
 
     public static List<String> getDistinctLetters(List<String> names) {
-        List<String> stringList= new ArrayList<>();
-        for (String name:names) {
-            stringList.addAll(Arrays.asList(name.split("")));
-        }
-        return stringList.stream().distinct().toList();
+        return names.stream().flatMap(name -> Arrays.stream(name.split(""))).distinct().toList();
     }
 
 
     public static String separateNamesByComma(List<User> users) {
-        return users.stream().map(User::getName).toList().toString().replace("[", "").replace("]", "");
+        return users.stream().map(User::getName).collect(Collectors.joining(", "));
     }
 
     public static double getAverageAge(List<User> users) {
