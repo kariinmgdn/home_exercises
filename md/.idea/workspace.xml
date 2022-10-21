@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9511a82-3c48-43f8-aa74-28e00cad0879" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/codelex/streams/practice/CharacterToStringCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codelex/streams/practice/CharacterToStringCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/codelex/streams/practice/StreamsExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codelex/streams/practice/StreamsExercise.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,12 +81,12 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.StreamsExerciseTest">
-    <configuration name="ComputersTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.codelex.oop.computers.ComputersTest" />
+    <configuration name="RandomNumberPositions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.codelex.loops.practice.RandomNumberPositions" />
       <module name="md" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="io.codelex.oop.computers.*" />
+          <option name="PATTERN" value="io.codelex.loops.practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,22 +109,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StreamsExerciseTest.shouldReturnAgeFromUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="md" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.codelex.practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="io.codelex.practice" />
-      <option name="MAIN_CLASS_NAME" value="io.codelex.practice.StreamsExerciseTest" />
-      <option name="METHOD_NAME" value="shouldReturnAgeFromUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StreamsExerciseTest.shouldReturnDistinctAges" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="md" />
       <extension name="coverage">
@@ -140,45 +125,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="md [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="test" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
+    <configuration name="StreamsExerciseTest.shouldReturnDistinctLetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="md" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.codelex.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.codelex.practice" />
+      <option name="MAIN_CLASS_NAME" value="io.codelex.practice.StreamsExerciseTest" />
+      <option name="METHOD_NAME" value="shouldReturnDistinctLetters" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamsExerciseTest.shouldSeparateNamesByComma" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="md" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.codelex.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.codelex.practice" />
+      <option name="MAIN_CLASS_NAME" value="io.codelex.practice.StreamsExerciseTest" />
+      <option name="METHOD_NAME" value="shouldSeparateNamesByComma" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StreamsExerciseTest" />
+        <item itemvalue="JUnit.StreamsExerciseTest.shouldSeparateNamesByComma" />
+        <item itemvalue="JUnit.StreamsExerciseTest.shouldReturnDistinctLetters" />
+        <item itemvalue="Application.RandomNumberPositions" />
         <item itemvalue="JUnit.StreamsExerciseTest.shouldReturnDistinctAges" />
-        <item itemvalue="JUnit.StreamsExerciseTest.shouldReturnAgeFromUser" />
-        <item itemvalue="Maven.md [test]" />
-        <item itemvalue="Application.ComputersTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fedffd3a-e2bb-4e6c-a3c1-2158f4271506" name="Changes" comment="" />
+      <changelist id="e9511a82-3c48-43f8-aa74-28e00cad0879" name="Changes" comment="" />
       <created>1664913676884</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -188,6 +180,7 @@
       <workItem from="1665156826662" duration="44547000" />
       <workItem from="1665498636926" duration="21524000" />
       <workItem from="1665580355275" duration="11620000" />
+      <workItem from="1666355081980" duration="1171000" />
     </task>
     <servers />
   </component>
