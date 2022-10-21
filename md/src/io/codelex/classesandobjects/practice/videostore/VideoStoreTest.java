@@ -40,11 +40,11 @@ public class VideoStoreTest {
             ALL_VIDEOS.addVideo(movieName);
             System.out.println("Enter rating");
             int rating = scanner.nextInt();
-            while (rating>5 || rating<1) {
+            while (rating > 5 || rating < 1) {
                 System.out.println("Please rate the movie 1-5");
                 rating = scanner.nextInt();
             }
-            ALL_VIDEOS.usersRating(movieName,rating);
+            ALL_VIDEOS.usersRating(movieName, rating);
         }
     }
 
@@ -59,10 +59,10 @@ public class VideoStoreTest {
         String name = scanner.nextLine();
         ALL_VIDEOS.returnVideo(name);
         int rating = scanner.nextInt();
-        while (rating>5 || rating<1) {
+        while (rating > 5 || rating < 1) {
             System.out.println("Please rate the movie 1-5");
             rating = scanner.nextInt();
         }
-        ALL_VIDEOS.usersRating(name,rating);
+        ALL_VIDEOS.usersRating(name, rating);
     }
 }

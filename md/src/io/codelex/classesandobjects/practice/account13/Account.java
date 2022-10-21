@@ -1,4 +1,4 @@
-package io.codelex.classesandobjects.practice.account_13;
+package io.codelex.classesandobjects.practice.account13;
 
 public class Account {
     private double balance;

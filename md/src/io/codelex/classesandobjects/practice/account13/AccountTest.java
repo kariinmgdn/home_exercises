@@ -1,4 +1,4 @@
-package io.codelex.classesandobjects.practice.account_13;
+package io.codelex.classesandobjects.practice.account13;
 
 public class AccountTest {
     public static void main(String[] args) {

@@ -1,10 +1,10 @@
-package io.codelex.classesandobjects.practice.dog_7;
+package io.codelex.classesandobjects.practice.dog7;
 
 public class Dog {
     private final String name;
     private final String sex;
     private String father;
-    private final String mother;
+    private String mother;
 
     public Dog(String name, String sex, String father, String mother) {
         this.name = name;
@@ -13,15 +13,20 @@ public class Dog {
         this.mother = mother;
     }
 
+    public Dog(String name, String sex) {
+        this.name = name;
+        this.sex = sex;
+    }
+
     public String dogs() {
-        return this.name + ", " + this.sex + ", " + fathersName();
+        return name + ", " + sex + ", " + fathersName();
     }
 
     public String fathersName() {
         if (father == null) {
-            this.father = "Unknown";
+            father = "Unknown";
         }
-        return this.father;
+        return father;
     }
 
     public boolean hasSameMotherAs(Dog otherDog) {

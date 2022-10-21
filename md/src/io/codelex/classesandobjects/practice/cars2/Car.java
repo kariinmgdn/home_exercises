@@ -1,4 +1,4 @@
-package io.codelex.classesandobjects.practice.cars_2;
+package io.codelex.classesandobjects.practice.cars2;
 
 public class Car {
 
@@ -13,11 +13,11 @@ public class Car {
         return getStartKilometers() / liters;
     }
 
-    public boolean gasHog() {
+    public final boolean gasHog() {
         return calculateConsumption() < 15;
     }
 
-    public boolean economyCar() {
+    public final boolean economyCar() {
         return calculateConsumption() > 15;
     }
 

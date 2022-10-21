@@ -1,4 +1,4 @@
-package io.codelex.classesandobjects.practice.cars_3;
+package io.codelex.classesandobjects.practice.cars3;
 
 public class Ride {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class Ride {
 
         while (gauge.getCurrentAmountOfFuel() > 0) {
             miles.incrementMileage(gauge);
-            miles.fuelDecreasment(gauge);
+            miles.fuelDecrement(gauge);
         }
 
     }

@@ -6,14 +6,16 @@ import java.util.List;
 
 public class Author {
 
-    public static final int BOOKS_IN_THE_WORLD =  129864880;
+    public static final int BOOKS_IN_THE_WORLD = 129864880;
     private final String firstName;
     private final String lastName;
     private final LocalDate dateOfBirth;
     private final List<String> allBooks = new ArrayList<>();
+
     public int getAge() {
-        return 2022-dateOfBirth.getYear();
+        return 2022 - dateOfBirth.getYear();
     }
+
     public Author(String firstName, String lastName, LocalDate dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -41,22 +43,25 @@ public class Author {
         return firstName + " " + lastName;
     }
 
-    public void addBook (String book) {
+    public void addBook(String book) {
         allBooks.add(book);
     }
+
     public boolean hasWrittenBook(String book) {
-        for (int i = 0; i < allBooks.size(); i++) {
-            if(allBooks.get(i).equals(book)) {
+        for (String allBook : allBooks) {
+            if (allBook.equals(book)) {
                 return true;
             }
         }
         return false;
     }
+
     public void printAllInfo() {
-        System.out.println("Author " + getFullName() + "\nHis age is " + getAge() + " at the moment\nHe has written " +allBooks.size()+ " books.");
+        System.out.println("Author " + getFullName() + "\nHis age is " + getAge() + " at the moment\nHe has written " + allBooks.size() + " books.");
     }
+
     public String toString() {
-        return getFirstName()+", "+getLastName()+", "+getAge()+", "+getDateOfBirth()+", "+getAllBooks();
+        return getFirstName() + ", " + getLastName() + ", " + getAge() + ", " + getDateOfBirth() + ", " + getAllBooks();
     }
 
 }

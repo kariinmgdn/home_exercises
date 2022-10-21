@@ -1,4 +1,4 @@
-package io.codelex.classesandobjects.practice.cars_3;
+package io.codelex.classesandobjects.practice.cars3;
 
 public class Odometer {
 
@@ -13,8 +13,8 @@ public class Odometer {
         }
     }
 
-    public void fuelDecreasment(FuelGauge gauge) {
-        if (mileage%10 == 0) {
+    public void fuelDecrement(FuelGauge gauge) {
+        if (mileage % 10 == 0) {
             gauge.decrementFuel();
         }
     }
