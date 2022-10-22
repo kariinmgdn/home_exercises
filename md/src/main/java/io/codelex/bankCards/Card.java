@@ -1,24 +1,41 @@
 package io.codelex.bankCards;
 
 public abstract class Card {
-
     private final int number;
     private final String name;
-    private final String CCVcode;
+    private final String ccvCode;
+    private double balance;
 
-    public Card(int number, String name, String CCVcode) {
+    protected Card(int number, String name, String ccvCode, double balance) {
         this.number = number;
         this.name = name;
-        this.CCVcode = CCVcode;
+        this.ccvCode = ccvCode;
+        this.balance = balance;
     }
 
-    public abstract void addMoney(double value);
-    public abstract void takeMoney(double value);
+    public void add(double amount) {
+        balance += amount;
+    }
+
+    public void take(double amount) {
+        if (amount > getBalance()) {
+            throw new NotEnoughFundsException("Not enough funds!");
+        } else {
+            balance -= amount;
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
 
     @Override
     public String toString() {
-        return "number=" + number +
-                ", name='" + name +
-                ", CCVcode=" + CCVcode;
+        return "Card{" +
+                "number=" + number +
+                ", name='" + name + '\'' +
+                ", ccvCode='" + ccvCode + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 }

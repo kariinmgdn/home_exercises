@@ -1,23 +1,20 @@
 package io.codelex.joiner;
 
 import java.util.List;
-import java.util.function.BiFunction;
+import java.util.stream.Collectors;
 
-public class Joiner <T> {
+public class Joiner<T> {
+    List<T> list;
 
-    private List<T> items;
-    private BiFunction <String, T, String> function;
-
-
-    public Joiner(String separator, BiFunction<String, T, String> function) {
-        this.function = function;
+    public Joiner(List<T> list, String separator) {
+        this.list = list;
+        this.separator = separator;
     }
 
+    private final String separator;
+
+
     public String join() {
-        String result = items.get(0).toString();
-        for (int i = 1; i < items.size(); i++) {
-            result = function.apply(result, items.get(i));
-        }
-        return result;
+        return list.stream().map(Object::toString).collect(Collectors.joining(separator));
     }
 }
