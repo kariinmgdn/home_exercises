@@ -4,17 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Supplier;
 
-public class Basket <T> {
+public class Basket<T> {
     List<T> basket = new ArrayList<>();
 
-    private final T item;
-    private Supplier<T> functionToCreate;
-
-    public Basket(T item) {
-        this.item = item;
+    public Basket() {
     }
 
-    public void addToBasket() {
+    public void addToBasket(T item) {
         if (basket.size() > 9) {
             throw new BasketFullException("Basket is already full!");
         } else {
@@ -26,7 +22,7 @@ public class Basket <T> {
         if (basket.size() == 0) {
             throw new BasketEmptyException("Basket is empty!");
         } else {
-            basket.remove(item);
+            basket.remove(basket.size() - 1);
         }
     }
 

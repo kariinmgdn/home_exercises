@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9511a82-3c48-43f8-aa74-28e00cad0879" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/codelex/streams/practice/StreamsExercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codelex/streams/practice/StreamsExercise.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/codelex/bankCards/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/codelex/bankCards/Cards.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/codelex/bankCards/CreditCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/codelex/bankCards/DebitCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/codelex/basket/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codelex/basket/Basket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/codelex/joiner/Joiner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/codelex/joiner/Joiner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/codelex/basket/BasketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/io/codelex/basket/BasketTest.java" afterDir="false" />
+>>>>>>> cef892d (pabeigts tests)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +55,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -59,27 +70,56 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.testRunning&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/karin/home_exercises/home_exercises/md/src",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.40344828",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.testRunning"
+  }
+}]]></component>
+>>>>>>> cef892d (pabeigts tests)
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="io.codelex.exceptions.practice" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\karin\home_exercises\home_exercises\md\src" />
+<<<<<<< HEAD
+=======
+      <recent name="C:\Users\karin\home_exercises\home_exercises\md\src\main\java\io\codelex\fileIO" />
+>>>>>>> cef892d (pabeigts tests)
       <recent name="C:\Users\karin\home_exercises\home_exercises\md" />
       <recent name="C:\Users\karin\home_exercises\home_exercises\md\src\main\java\io\codelex" />
       <recent name="C:\Users\karin\home_exercises\home_exercises\md\src\io\codelex" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\karin\home_exercises\home_exercises\md\src\main" />
       <recent name="C:\Users\karin\home_exercises\home_exercises\md\test" />
       <recent name="C:\Users\karin\home_exercises\home_exercises\md\test\src" />
       <recent name="C:\Users\karin\home_exercises\home_exercises\md" />
       <recent name="C:\Users\karin\home_exercises\home_exercises\md\src\test\main" />
+=======
+      <recent name="C:\Users\karin\home_exercises\home_exercises\md\src\main\java\io\codelex\fileIO" />
+      <recent name="C:\Users\karin\home_exercises\home_exercises\md\src\main\java" />
+      <recent name="C:\Users\karin\home_exercises\home_exercises\md\src\main" />
+      <recent name="C:\Users\karin\home_exercises\home_exercises\md\test" />
+      <recent name="C:\Users\karin\home_exercises\home_exercises\md\test\src" />
+>>>>>>> cef892d (pabeigts tests)
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="io.codelex.practice" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.StreamsExerciseTest">
     <configuration name="RandomNumberPositions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.codelex.loops.practice.RandomNumberPositions" />
@@ -87,6 +127,15 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="io.codelex.loops.practice.*" />
+=======
+  <component name="RunManager" selected="Application.Exercise5">
+    <configuration name="Exercise5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.codelex.exercise5.Exercise5" />
+      <module name="md" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.codelex.exercise5.*" />
+>>>>>>> cef892d (pabeigts tests)
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,6 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="StreamsExerciseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="md" />
       <extension name="coverage">
@@ -104,11 +154,50 @@
       </extension>
       <option name="PACKAGE_NAME" value="io.codelex.practice" />
       <option name="MAIN_CLASS_NAME" value="io.codelex.practice.StreamsExerciseTest" />
+=======
+    <configuration name="FileIO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.codelex.fileIO.FileIO" />
+      <module name="md" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.codelex.fileIO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.codelex.joiner.Test" />
+      <module name="md" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.codelex.joiner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JoinerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="md" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.codelex.joiner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.codelex.joiner" />
+      <option name="MAIN_CLASS_NAME" value="io.codelex.joiner.JoinerTest" />
+>>>>>>> cef892d (pabeigts tests)
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="StreamsExerciseTest.shouldReturnDistinctAges" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="md" />
       <extension name="coverage">
@@ -152,6 +241,19 @@
       <option name="PACKAGE_NAME" value="io.codelex.practice" />
       <option name="MAIN_CLASS_NAME" value="io.codelex.practice.StreamsExerciseTest" />
       <option name="METHOD_NAME" value="shouldSeparateNamesByComma" />
+=======
+    <configuration name="JoinerTest.joinInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="md" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.codelex.joiner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="io.codelex.joiner" />
+      <option name="MAIN_CLASS_NAME" value="io.codelex.joiner.JoinerTest" />
+      <option name="METHOD_NAME" value="joinInt" />
+>>>>>>> cef892d (pabeigts tests)
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +261,19 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.StreamsExerciseTest" />
         <item itemvalue="JUnit.StreamsExerciseTest.shouldSeparateNamesByComma" />
         <item itemvalue="JUnit.StreamsExerciseTest.shouldReturnDistinctLetters" />
         <item itemvalue="Application.RandomNumberPositions" />
         <item itemvalue="JUnit.StreamsExerciseTest.shouldReturnDistinctAges" />
+=======
+        <item itemvalue="Application.Exercise5" />
+        <item itemvalue="Application.FileIO" />
+        <item itemvalue="JUnit.JoinerTest" />
+        <item itemvalue="JUnit.JoinerTest.joinInt" />
+        <item itemvalue="Application.Test" />
+>>>>>>> cef892d (pabeigts tests)
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +290,14 @@
       <workItem from="1665156826662" duration="44547000" />
       <workItem from="1665498636926" duration="21524000" />
       <workItem from="1665580355275" duration="11620000" />
+<<<<<<< HEAD
       <workItem from="1666355081980" duration="1171000" />
+=======
+      <workItem from="1666355081980" duration="1813000" />
+      <workItem from="1666356922618" duration="4996000" />
+      <workItem from="1666370930479" duration="264000" />
+      <workItem from="1666437878885" duration="11858000" />
+>>>>>>> cef892d (pabeigts tests)
     </task>
     <servers />
   </component>
