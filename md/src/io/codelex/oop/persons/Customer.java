@@ -1,6 +1,6 @@
 package io.codelex.oop.persons;
 
-public class Customer extends Person{
+public class Customer extends Person {
 
     private final String customerId;
     private int purchaseCount;
@@ -21,6 +21,6 @@ public class Customer extends Person{
 
     @Override
     public String getInfo() {
-        return getFirstName() + " " + getLastName() + " " + customerId + " (" + getPurchaseCount() + " purchases)" ;
+        return getFirstName() + " " + getLastName() + " " + customerId + " (" + getPurchaseCount() + " purchases)";
     }
 }

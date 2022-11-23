@@ -2,7 +2,7 @@ package io.codelex.oop.cars;
 
 import java.util.*;
 
-public class CarService{
+public class CarService {
     private final List<Car> carsInService = new ArrayList<>();
     private int mostExp = 0;
     private Car mostExpCar;
@@ -18,11 +18,12 @@ public class CarService{
         carsInService.remove(car);
     }
 
-    public List<Car> V12Engine() {
+    public List<Car> getByEngineType(Engine engine) {
         return carsInService.stream()
-                .filter(car -> car.getCarEngine().equals(Engine.V12))
+                .filter(car -> car.getCarEngine().equals(engine))
                 .toList();
     }
+
     public void sortList(String parameter) {
         if (parameter.equals("ascending")) {
             carsInService.sort(Comparator.comparing(Car::getCarName));
@@ -76,7 +77,7 @@ public class CarService{
                     }
                 }
             }
-            if (i>0) {
+            if (i > 0) {
                 carList.add(car);
             }
         }
@@ -85,7 +86,7 @@ public class CarService{
 
     public boolean specificCar(Car car) {
         for (Car car1 : carsInService) {
-            if(car1.equals(car)) {
+            if (car1.equals(car)) {
                 return true;
             }
         }
@@ -94,7 +95,7 @@ public class CarService{
 
     public List<Car> producedBefore1999() {
         return carsInService.stream()
-                .filter(car -> car.getYearOfManufacture()<1999)
+                .filter(car -> car.getYearOfManufacture() < 1999)
                 .toList();
     }
 
@@ -123,7 +124,6 @@ public class CarService{
                 .filter(car -> car.getManufacturerList().size() >= 3)
                 .toList();
     }
-
 
 
     public List<Car> getCarsInService() {

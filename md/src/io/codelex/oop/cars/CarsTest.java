@@ -23,10 +23,10 @@ public class CarsTest {
 
         Car car1 = new Car("Mashiina BrumBrum original", "very cool", 30000, 2005, manufacturerList2, "V12");
         Car car2 = new Car("Mashiina BrumBrum 2", "slay", 10200, 1995, manufacturerList4, "V8");
-        Car car3 = new Car("Mashiina BrumBrum nr 3", "idk", 20000, 1995,manufacturerList4, "V12");
+        Car car3 = new Car("Mashiina BrumBrum nr 3", "idk", 20000, 1995, manufacturerList4, "V12");
 
 
-        Car car4 = new Car("Mashiina BrumBrum nr 4000", "idk", 20000, 1995,manufacturerList4, "V12");
+        Car car4 = new Car("Mashiina BrumBrum nr 4000", "idk", 20000, 1995, manufacturerList4, "V12");
 
         CarService carService = new CarService();
         carService.addCar(car1);
@@ -40,7 +40,7 @@ public class CarsTest {
         System.out.println(carService.producedBefore1999());
         System.out.println(carService.cheapestCar());
         System.out.println(carService.expensiveCar());
-        System.out.println(carService.V12Engine());
+        System.out.println(carService.getByEngineType(Engine.V12));
         System.out.println(carService.atLeast3Manufacturers());
         System.out.println(carService.specificCar(car1));
         System.out.println(carService.specificCar(car4));

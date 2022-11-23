@@ -12,6 +12,7 @@ public abstract class Person {
         this.id = id;
         this.age = age;
     }
+
     public abstract String getInfo();
 
     public String getFirstName() {

@@ -21,8 +21,6 @@ public class Car {
     }
 
 
-
-
     public String getCarName() {
         return carName;
     }
@@ -56,7 +54,12 @@ public class Car {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return price == car.price && yearOfManufacture == car.yearOfManufacture && carName.equals(car.carName) && model.equals(car.model) && manufacturerList.equals(car.manufacturerList) && carEngine == car.carEngine;
+        return price == car.price
+                && yearOfManufacture == car.yearOfManufacture
+                && carName.equals(car.carName)
+                && model.equals(car.model)
+                && manufacturerList.equals(car.manufacturerList)
+                && carEngine == car.carEngine;
     }
 
     @Override

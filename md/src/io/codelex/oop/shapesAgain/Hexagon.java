@@ -1,6 +1,6 @@
 package io.codelex.oop.shapesAgain;
 
-public class Hexagon extends Shape2{
+public class Hexagon extends Shape2 {
 
     private final double side;
 
@@ -10,12 +10,12 @@ public class Hexagon extends Shape2{
 
     @Override
     public double calculatePerimeter() {
-        return 6*getSide();
+        return 6 * getSide();
     }
 
     @Override
     public double calculateArea() {
-        return 3*Math.sqrt(3)/2*Math.pow(getSide(),2);
+        return 3 * Math.sqrt(3) / 2 * Math.pow(getSide(), 2);
     }
 
     public String toString() {

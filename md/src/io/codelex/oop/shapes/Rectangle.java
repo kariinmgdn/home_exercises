@@ -17,13 +17,13 @@ public class Rectangle extends Shape {
 
     @Override
     public void getArea() {
-        int area = width*heigth;
+        int area = width * heigth;
         System.out.println("The area of a rectangle is " + area);
     }
 
     @Override
     public void getPerimeter() {
-        int perimeter = 2*(width+heigth);
+        int perimeter = 2 * (width + heigth);
         System.out.println("The perimeter of a rectangle is " + perimeter);
     }
 }

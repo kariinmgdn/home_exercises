@@ -1,6 +1,6 @@
 package io.codelex.oop.shapesAgain;
 
-public class Triangle extends Shape2{
+public class Triangle extends Shape2 {
 
     private final double base;
 
@@ -10,12 +10,12 @@ public class Triangle extends Shape2{
 
     @Override
     public double calculatePerimeter() {
-        return 3*getBase();
+        return 3 * getBase();
     }
 
     @Override
     public double calculateArea() {
-        return Math.pow(getBase(),2)*Math.sqrt(3)/4;
+        return Math.pow(getBase(), 2) * Math.sqrt(3) / 4;
     }
 
     public String toString() {

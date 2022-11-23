@@ -1,6 +1,6 @@
 package io.codelex.oop.shapesAgain;
 
-public class Rectangle extends Shape2{
+public class Rectangle extends Shape2 {
 
     private final double height;
     private final double wight;
@@ -12,12 +12,12 @@ public class Rectangle extends Shape2{
 
     @Override
     public double calculatePerimeter() {
-        return 2*(getHeight()+getWight());
+        return 2 * (getHeight() + getWight());
     }
 
     @Override
     public double calculateArea() {
-        return getHeight()*getWight();
+        return getHeight() * getWight();
     }
 
     public String toString() {

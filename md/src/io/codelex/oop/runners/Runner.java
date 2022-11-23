@@ -2,7 +2,7 @@ package io.codelex.oop.runners;
 
 public enum Runner {
 
-    BEGINNER(421,600),
+    BEGINNER(421, 600),
     INTERMEDIATE(361, 420),
     ADVANCED(240, 360);
 

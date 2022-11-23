@@ -16,18 +16,18 @@ public class DatePeriod {
         LocalDate startResult;
         LocalDate endResult;
 
-        if (getEnd().isBefore(datePeriod.start) || datePeriod.getEnd().isBefore(getStart())) {
+        if (end.isBefore(datePeriod.start) || datePeriod.end.isBefore(start)) {
             return null;
         }
-        
-        if (getStart().isBefore(datePeriod.start) || getStart().isEqual(datePeriod.start)) {
+
+        if (start.isBefore(datePeriod.start) || start.isEqual(datePeriod.start)) {
             startResult = datePeriod.start;
         } else {
-            startResult = getStart();
+            startResult = start;
         }
 
-        if (getEnd().isBefore(datePeriod.end) || getEnd().isEqual(datePeriod.end)) {
-            endResult = getEnd();
+        if (end.isBefore(datePeriod.end) || end.isEqual(datePeriod.end)) {
+            endResult = end;
         } else {
             endResult = datePeriod.end;
         }
@@ -35,16 +35,8 @@ public class DatePeriod {
         return new DatePeriod(startResult, endResult);
     }
 
-    public LocalDate getStart() {
-        return start;
-    }
-
-    public LocalDate getEnd() {
-        return end;
-    }
-
     @Override
     public String toString() {
-        return getStart() + " - " + getEnd();
+        return start + " - " + end;
     }
 }

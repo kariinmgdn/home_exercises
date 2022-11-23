@@ -20,11 +20,20 @@ public class Parcel implements Validatable{
 
     @Override
     public boolean validate() {
-        if (getxLength() + getyLength() + getzLength() < 300 &&
-        getxLength() < 30 && getyLength() < 30 && getzLength() < 30) {
+
+        if (isTrue()) {
             return getWeight() < 30 && !isExpress() || getWeight() < 15 && isExpress();
         }
         return false;
+    }
+
+    private boolean isTrue() {
+
+        final int max = 300;
+        final int maxLength = 30;
+
+        return getxLength() + getyLength() + getzLength() < max
+                && getxLength() < maxLength && getyLength() < maxLength && getzLength() < maxLength;
     }
 
     public int getxLength() {
