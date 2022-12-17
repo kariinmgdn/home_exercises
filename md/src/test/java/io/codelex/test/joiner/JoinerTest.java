@@ -1,4 +1,4 @@
-package io.codelex.joiner;
+package io.codelex.test.joiner;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

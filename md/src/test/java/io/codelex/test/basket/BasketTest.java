@@ -1,4 +1,4 @@
-package io.codelex.basket;
+package io.codelex.test.basket;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
