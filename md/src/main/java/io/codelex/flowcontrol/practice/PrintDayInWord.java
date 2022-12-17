@@ -20,7 +20,7 @@ public class PrintDayInWord {
                 System.out.println("Thursday");
             }else if (dayNumber == 5) {
                 System.out.println("Friday");
-            }else if (dayNumber == 6) {
+            }else {
                 System.out.println("Saturday");
             }
         } else {

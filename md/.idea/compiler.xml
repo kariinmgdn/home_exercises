@@ -9,11 +9,8 @@
         <module name="md" />
       </profile>
     </annotationProcessing>
-<<<<<<< HEAD
-=======
     <bytecodeTargetLevel>
       <module name="md" target="17" />
     </bytecodeTargetLevel>
->>>>>>> cef892d (pabeigts tests)
   </component>
 </project>
